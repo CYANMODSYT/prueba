@@ -1,0 +1,243 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+
+body{
+    min-height: 100vh;
+    background: url(https://i.pinimg.com/originals/fe/b2/ec/feb2ecdf27db4952f809dd9b1b622c19.jpg) no-repeat center fixed;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+
+}
+
+.imagen{
+    align-self: center;
+    & img{
+        width: 400px;
+        border: 2px solid white;
+        box-shadow: 10px 10px white;
+    }
+}
+
+header{
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    margin-bottom: 50px;
+}
+
+.texto{
+    border-radius: 10px;
+    max-width: 450px;
+    background: transparent;
+    backdrop-filter: blur(20px);
+    border: 2px solid rgba(255, 255, 255, .2);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    padding: 30px;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    & h2 {
+        color: white;
+        padding-bottom: 20px;
+        font-size: 34px;
+        text-align: center;
+    }
+    & p{
+        color: white;
+        text-align: center;
+    }
+
+    & span{
+        color: rgb(238, 179, 0);
+    }
+
+}
+
+.contenedor{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.formulario{
+    max-width: 450px;
+    background: transparent;
+    backdrop-filter: blur(20px);
+    border: 2px solid rgba(255, 255, 255, .2);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    padding: 50px;
+    border-radius: 10px;
+    & h1{
+        color: white;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+}
+
+.texto #chec{
+    color: white;
+    font-size: 100PX;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"]{
+    padding: 8px;
+    outline: none;
+    background-color: transparent;
+    border-radius: 100px;
+    border: 1px solid white;
+    color: white;
+    margin-bottom: 20px;
+    &::placeholder{
+        color: white;
+        padding-left: 10px;
+    }
+    
+}
+
+input[type="button"]{
+    padding: 10px;
+    background-color: rgb(221, 161, 49);
+    border-radius: 100px;
+    width: 150px;
+    color: white;
+    border: none;
+    margin-top: 20px;
+    cursor: pointer;
+    width: 250px;
+    &:hover{
+        background-color: rgb(142, 114, 31);
+    }
+}
+
+.sub-contendor{
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 20px;
+    align-items: center;
+}
+
+.recuperar a{
+    text-decoration: none;
+    color: white;
+    padding: 8px;
+    &:hover{
+        color: #f4b256;
+    }
+}
+
+.checkedt{
+    color: white;
+    padding: 8px;
+    margin-right: 20px;
+    &:hover{
+        color: #f4b256;
+    }
+}
+
+.btn {
+    text-align: center;
+}
+
+.input-field {
+    max-width: 380px;
+    width: 100%;
+    background-color: #f0f0f0;
+    margin: 10px 0;
+    height: 55px;
+    border-radius: 55px;
+    display: grid;
+    grid-template-columns: 15% 85%;
+    padding: 0 0.4rem;
+    position: relative;
+  }
+
+input[type="submit"]
+ {
+    padding: 10px;
+    background-color: #eea148;
+    color: white;
+    border: none;
+    border-radius: 100px;
+    cursor: pointer;
+    &:hover{
+        background-color: rgb(230, 123, 23);
+    }
+}
+
+.minilogos {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.iconos{
+    width: 35px;
+    height: 35px;
+    border: 2px solid white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-decoration: none;
+    margin-right: 10px;
+    &:hover{
+        color: #f4b256;
+    }
+}
+
+footer{ /*footer*/
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+    right: 1px;
+    position: fixed;
+    padding: 10px;
+    color: white;
+}
+
+@media (max-width: 870px){
+    .contenedor{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        & img{
+            margin-bottom: 40px;
+        }
+    }
+
+    .formulario{
+            max-width: 450px;
+            background: transparent;
+            backdrop-filter: blur(20px);
+            border: 2px solid rgba(255, 255, 255, .2);
+            box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+            padding: 50px;
+            border-radius: 10px;
+            margin-left: 30px;
+            margin-top: 20px;
+            & h1{
+                color: white;
+                text-align: center;
+                margin-bottom: 30px;
+            }
+        }
+    }
